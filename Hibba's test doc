@@ -1,0 +1,71 @@
+this is hibba's new doc
+
+
+all the commands run to set up git repo on ccb cluster
+2023$ history
+
+
+This is getting to the project folder
+   10  cd /project/sims-lab
+   11  ls
+   12  cd shared
+   13  ls
+   14  uniq_plus_2023/
+   15  ls
+   16  cd uniq_plus_2023/
+   17  ls
+
+this is making code directory
+   18  mkdir hibba_code
+   19  ls
+changing permissions (to show charlie :)
+   20  chmod 777 hibba_code
+   21  ls
+   22  cs hibba~_code
+   23  cd hibba_code
+   24  ls
+
+setting up git account on ccb cluster 
+   39  git config --global user.email "ZTTJ235@live.rhul.ac.uk"
+   40  git config --global user.name "Hibba Kamran"
+
+
+setting up - making ssh for github
+   25  ssh-keygen -t ecdsa -b 521
+   26  cat ~/.ssh/id_ecdsa.pub
+
+setting up git repo on ccb cluster
+   27  git clonegit@github.com:sims-lab/uniq_plus_2023.git
+   28  git clone git@github.com:sims-lab/uniq_plus_2023.git
+   29  ls
+   30  cd uniq_plus_2023
+   31  ls
+
+making test doc 
+   32  nano
+   33  ls
+   34  Hibba's test doc
+   35  cat "Hibba's test doc"
+
+adding the test doc to git 
+   36  git add "Hibba's test doc"
+   37  git status
+
+making first commit to git with message stamp 
+   41  git commit -m "Hibba's first edit" 
+
+pushing commit to github
+   42  git push
+
+printing all command history
+   43  history
+
+How to use Git:
+cd into git repo
+check in git repo using git status 
+git add file of choice
+git commit -m ""
+git push 
+
+error? - try git pull to sync file
+save analysis all on jupyter folder + push all on github 
